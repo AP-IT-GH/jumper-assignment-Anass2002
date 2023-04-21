@@ -450,8 +450,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 6578773160883060817, guid: 2f77cf35d65aaf4428a5be9fdaa56ed7, type: 3}
-  minSpeed: 35
-  maxSpeed: 50
+  minSpeed: 30
+  maxSpeed: 40
   minScale: 1
   maxScale: 5
   spawnCooldown: 5
@@ -567,6 +567,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road_line
       objectReference: {fileID: 0}
+    - target: {fileID: 8499614720051398551, guid: dfec8d9b723b08e4ab4463a1b8f9cd7d, type: 3}
+      propertyPath: m_TagString
+      value: floor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfec8d9b723b08e4ab4463a1b8f9cd7d, type: 3}
 --- !u!1 &667408199
@@ -614,8 +618,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 6578773160883060817, guid: 2f77cf35d65aaf4428a5be9fdaa56ed7, type: 3}
-  minSpeed: 35
-  maxSpeed: 50
+  minSpeed: 30
+  maxSpeed: 40
   minScale: 1
   maxScale: 5
   spawnCooldown: 2
@@ -991,7 +995,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &1363036406
 MonoBehaviour:
@@ -1013,7 +1017,6 @@ MonoBehaviour:
   jumpForce: 7
   jumpTime: 0.1
   coin: {fileID: 266992613}
-  rotationMultiplier: 5
 --- !u!114 &1363036407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1038,8 +1041,8 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 0}
   m_InferenceDevice: 0
-  m_BehaviorType: 1
-  m_BehaviorName: My Behavior
+  m_BehaviorType: 0
+  m_BehaviorName: AgentTraining
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
@@ -1087,8 +1090,8 @@ MonoBehaviour:
   m_DetectableTags: []
   m_RaysPerDirection: 3
   m_MaxRayDegrees: 180
-  m_SphereCastRadius: 0.25
-  m_RayLength: 7
+  m_SphereCastRadius: 0.5
+  m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -1269,6 +1272,10 @@ PrefabInstance:
     - target: {fileID: 8499614720051398551, guid: dfec8d9b723b08e4ab4463a1b8f9cd7d, type: 3}
       propertyPath: m_Name
       value: Road_line
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499614720051398551, guid: dfec8d9b723b08e4ab4463a1b8f9cd7d, type: 3}
+      propertyPath: m_TagString
+      value: floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfec8d9b723b08e4ab4463a1b8f9cd7d, type: 3}
